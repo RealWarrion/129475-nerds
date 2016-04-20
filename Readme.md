@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Егор(Warrion) Поликарпов](https://up.htmlacademy.ru/htmlcss/13/user/129475).
-* Наставник: `Nope` В ожидании...
+* Наставник: [Екатерина Головкина](https://up.htmlacademy.ru/htmlcss/13/user/45675).
 
 ---
 
