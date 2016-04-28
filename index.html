@@ -5,8 +5,159 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <div class="container">
+      <header class="main-header">
+		<nav class="main-navigator">			
+		  <ul>
+			<li>
+			  <a class="header-logo" href="#"><img src="img/logo_header.png" width="140" height="65" alt="home"></a>
+			</li>
+			<li>
+			  <a href="#">Cтудия</a>
+			</li>
+			<li>
+			  <a href="#">Клиенты</a>
+			</li>
+			<li>
+			  <a href="#">Магазин</a>
+			</li>
+			<li>
+			  <a href="#">Контакты</a>
+			</li>
+			<li>
+			  <div class="cart">
+			    <a href="#">корзина</a>
+			  </div>
+			</li>
+		  </ul>
+		</nav>
+	  </header>
+	  <header class="sub-header"> 
+	    <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+		  <input type="radio" id="btn-2" name="toggle">
+		  <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+			<label for="btn-1"></label>
+			<label for="btn-2"></label>
+			<label for="btn-3"></label>
+          </div>
+          <div class="slides">
+			<div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+			       для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+				   для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+				   для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+	  </header>	
+	  <main class="container clearfix">
+		<div class="index-сard clearfix">
+		  <article class="Web">
+			<img src="img/web.jpg" width="140" height="100" alt="Веб-сайты">
+			<h2 class="index-card-h2">Веб-сайты</h2>
+			<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+			<a class="btn btn-red" href="#">Заказать</a>
+		  </article>
+		  <article class="Apps">
+			<img src="img/apps.jpg" width="140" height="100" alt="Приложения">
+			<h2 class="index-card-h2">Приложения</h2>
+			<p>Покорите топ-10 приложений а AppStore и Google Play</p>
+			<a class="btn btn-green" href="#">Заказать</a>
+		  </article>
+		  <article class="Presentations">
+			<img src="img/presentations.jpg" width="140" height="100" alt="Презентации">
+			<h2 class="index-card-h2">Презентации</h2>
+			<p>Вы даже не подозреваетеэ насколько вы изумительны!</p>
+			<a class="btn btn-yellow" href="#">Заказать</a>
+		  </article>		  
+		</div>
+		<div class="index-nerds clearfix">
+			<div class="index-nerds-left">
+			  <h2 class="nerds-h2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+			  <p>Исповедуем принципы минимализма и чистоты. Ставим математический рассчет выше креатива. Работаем не покладая рук как роботы.</p>
+			  <div class="index-nerds-list">
+				<span class="index-nerds-label">Выполняем заказы на разработку:</span>
+				<ul>
+				  <li>
+				    <p>Веб-сайтов любой сложности</p>
+				  </li>
+				  <li>
+				    <p>Мобильныз приложений для iOs и Android</p>
+				  </li>
+				  <li>
+				    <p>Слайдшоу и видео для корпоративнх презентаций</p>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="index-nerds-right">
+			  <img src="img/nerds_since.png" width="240" height="130" alt="Логотип">
+			   <div class="index-nerds-list">
+				<span class="index-nerds-label">Как мы работаем:</span>
+				<ul>
+				  <li>
+				    <p>С самоотдачей 146%</p>
+				  </li>
+				  <li>
+				    <p>Соблюдая сроки на 100%</p>
+				  </li>
+				  <li>
+				    <p>По предоплате 50%</p>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+		<div class="index-promo clearfix">
+		  <a href="#"><img src="img/glukhanko_logo.png" width="200" height="100" alt="Glukhanko"></a>
+		  <a href="#"><img src="img/html_academy_logo.png" width="200" height="100" alt="Html academy"></a>
+		  <a href="#"><img src="img/borodinski_logo.png" width="200" height="100" alt="Барбешоп «Бородинский»"></a>
+		</div>
+	  </main>
+	  <footer class="index-map">
+	    <div class="container">
+		  <article class="index-adress">
+		    <b>Nёrds desing studio</b>
+		    <p> 191135, Санкт-Петербург,<br>
+		    ул. Б. Конюшенная, д. 19/8<p>
+		    <p> тел: +7 (812) 275-75-75</p>
+		    <a class="btn" href="#">Напишите нам</a>
+		  </article>
+		</div>  
+	  </footer>
+	  <div class="container"> 
+		<footer class="main-footer clearfix">
+	      <section class="footer-social">
+			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+			<a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+			<a class="social-btn social-btn-inst" href="#">Инстограм</a>  		
+		  </section>
+		  <section class="footer-friendship">
+			<h2>Давайте дружить, это выгодно!</h2>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		  </section>		  
+		</footer>
+	  </div>  
+	</div>
   </body>
 </html>
