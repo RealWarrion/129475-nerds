@@ -1,191 +1,193 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="main-header">
-		<nav class="main-navigator">			
-		  <ul>
-			<li>
-			  <a class="header-logo" href="#"><img src="img/logo_header.png" width="140" height="65" alt="home"></a>
-			</li>
-			<li>
-			  <a href="#">Cтудия</a>
-			</li>
-			<li>
-			  <a href="#">Клиенты</a>
-			</li>
-			<li>
-			  <a href="#">Магазин</a>
-			</li>
-			<li>
-			  <a href="#">Контакты</a>
-			</li>
-			<li>
-			  <div class="cart">
-			    <a href="#">корзина</a>
-			  </div>
-			</li>
-		  </ul>
-		</nav>
-	  </header>
-	  <header class="sub-header">
-	    <b class="catalog-main-label">Добро пожаловать в магазин готовых макетов</b>	  
-	  </header>
-	</div>
-	  <main class="container clearfix">
-	    <section class="catalog-filters">
-		  <form class="catalog-filters-cost" action="#" method="post">
-			<article class="catalog-range-filter">
-			  <span class="catalog-filters-label">Стоимость:</span>
-			  <div class="range-filter">
-			    <div class="range-controls">
-				  <div class="scale">
-				    <div style="margin-left:50px;width:100px" class="bar"></div>
-				  </div>
-				  <div class="toggle min-toggle"></div>
-				  <div class="toggle max-toggle"></div>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container clearfix">
+				<nav class="main-navigation clearfix">
+					<div class="header-logo">
+						<a class="header-logo" href="#"><img src="img/logo_header.png" width="140" height="65" alt="home"></a>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Cтудия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="cart">
+					<a href="#">корзина</a>
 				</div>
-				<div class="price-controls">
-				  от <input class="min-price" type="text" value="5000">
-				  до <input class="maxprice" type="text" value="15000">
+			</div>
+		</header>
+		<div class="header">
+			<div class="container">
+				<b class="catalog-main-label">Добро пожаловать в магазин готовых макетов</b>
+			</div>
+		</div>
+		<main class="container clearfix">
+			<section class="catalog-filters">
+				<form class="catalog-filters-cost" action="#" method="post">
+					<div class="catalog-range-filter">
+						<p class="catalog-filters-label">Стоимость:</p>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div style="margin-left:50px;width:100px" class="bar"></div>
+									<div class="toggle min-toggle"></div>
+									<div class="toggle max-toggle"></div>
+								</div>
+							</div>
+							<div class="price-controls">
+								<label> от <input class="min-price" type="text" value="5000"></label>
+								<label> до <input class="maxprice" type="text" value="15000"></label>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-filter-grid">
+						<p class="catalog-filters-label">Сетка:</p>
+						<ul>
+							<li>
+								<input type="radio" name="ansewer-one" value="Адаптивная" checked>
+								<label for="ansewer-one"><a href="#">Адаптивная<a></label>
+							</li>
+							<li>
+								<input type="radio" name="ansewer-one" value="Фиксированная">
+								<label for="ansewer-one"><a href="#">Фиксированная<a></label>
+							</li>
+							<li>
+								<input type="radio" name="ansewer-one" value="Резиновая">
+								<label for="ansewer-one"><a href="#">Резиновая<a></label>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-filter-options">
+						<p class="catalog-filters-label">Особенности:</p>
+						<ul>
+							<li>
+								<input type="checkbox" name="filter-slider" id="filter-slider" checked>
+								<label for="filter-slider"><a href="#">Слайдер<a></label>
+							</li>
+							<li>
+									<input type="checkbox" name="filter-advantages" id="filter-advantages">
+									<label for="filter-advantages"><a href="#">Блок преимуществ<a></label>
+							</li>
+							<li>
+								<input type="checkbox" name="filter-news" id="filter-news" checked>
+								<label for="filter-news"><a href="#">Новости<a></label>
+							</li>
+							<li>
+								<input type="checkbox" name="filter-gallery" id="filter-gallery">
+								<label for="filter-gallery"><a href="#">Галерея<a></label>
+							</li>
+							<li>
+								<input type="checkbox" name="filter-basket" id="filter-basket">
+								<label for="filter-basketr"><a href="#">Корзина<a></label>
+							</li>
+						</ul>
+					</div>
+					<button class="btn btn-show" type="submit" value="Показать">Показать</button>
+				</form>
+			</section>
+			<section class="catalog-web-gallery">
+				<div class="catalog-filter-gallery clearfix">
+					<b>Сортировать:</b>
+					<ul class="catalog-filter-sub">
+						<li>
+							<a href="#">по цене</a>
+						</li>
+						<li>
+							<a href="#">по типу</a>
+						</li>
+						<li>
+							<a href="#">по функционалу</a>
+						</li>
+					</ul>
+					<div class="filter-arrows">
+						<a class="btn-dwon" href="#">сверху вниз</a>
+						<a class="btn-top" href="#">снизу вверх</a>
+					</div>
 				</div>
-			  </div>			  
-			</article>
-			<article class="catalog-filter-grid">
-			  <span class="catalog-filters-label">Сетка:</span>
-			  <ul>
-				<li>
-				  <input type="radio" name="ansewer-one" value="Адаптивная" checked>
-				  <label for="ansewer-one"><a href="#">Адаптивная<a></label>
-				</li>
-				<li>
-				  <input type="radio" name="ansewer-one" value="Фиксированная">
-				  <label for="ansewer-one"><a href="#">Фиксированная<a></label>
-				</li>
-				<li>
-				  <input type="radio" name="ansewer-one" value="Резиновая">
-				  <label for="ansewer-one"><a href="#">Резиновая<a></label>
-				</li>
-			  </ul>			
-			</article>
-			<article class="catalog-filter-options">
-			  <span class="catalog-filters-label">Особенности:</span>
-			    <ul>
-				  <li>
-				    <input type="checkbox" name="filter-slider" id="filter-slider" checked>
-					<label for="filter-slider"><a href="#">Слайдер<a></label>
-				  </li>
-				  <li>
-				    <input type="checkbox" name="filter-advantages" id="filter-advantages">
-					<label for="filter-advantages"><a href="#">Блок преимуществ<a></label>
-				  </li>
-				  <li>
-				    <input type="checkbox" name="filter-news" id="filter-news" checked>
-					<label for="filter-news"><a href="#">Новости<a></label>
-				  </li>
-				  <li>
-				    <input type="checkbox" name="filter-gallery" id="filter-gallery">
-					<label for="filter-gallery"><a href="#">Галерея<a></label>
-				  </li>
-				  <li>
-				    <input type="checkbox" name="filter-basket" id="filter-basket">
-					<label for="filter-basketr"><a href="#">Корзина<a></label>
-				  </li>
-				</ul>				
-			</article>
-			<button class="btn btn-show" type="submit" value="Показать">Показать</button>
-		  </form>
-		</section>
-		<section class="catalog-web-gallery">
-		  <div class="catalog-filter-gallery clearfix">
-			<b>Сортировать:</b>
-			<ul>
-			  <li>
-				<a href="#">по цене</a>
-			  </li>
-			  <li>
-				<a href="#">по типу</a>
-			  </li>
-			  <li>
-				<a href="#">по функционалу</a>
-			  </li>
-			</ul>
-			<ul class="filter-gallery-top-down">
-			  <li>
-				<a class="btn-dwon" href="#">сверху вниз</a>
-			  </li>
-			  <li>
-				<a class="btn-top" href="#">снизу вверх</a>
-			  </li>
-			</ul>				
-		  </div>
-		  <div class="catalog-gallery">
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_1.jpg" width="240" height="240" alt="catalog_web_1">
-			</article>
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_2.jpg" width="240" height="240" alt="catalog_web_2">
-			</article>
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_3.jpg" width="240" height="240" alt="catalog_web_3">
-			</article>
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_4.jpg" width="240" height="240" alt="catalog_web_4">
-			</article>
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_5.jpg" width="240" height="240" alt="catalog_web_5">
-			</article>
-			<article class="catalog-item">
-			  <img src="img/catalog_web_small_6.jpg" width="240" height="240" alt="catalog_web_6">
-			</article>
-		  
-		  </div>
-		  <div class="items-scroll">
-			<ul>
-			  <li>
-				<a href="#">1</a> 
-			  </li>
-			  <li>
-				<a href="#">2</a> 
-			  </li>
-			  <li>
-				<a href="#">3</a> 
-			  </li>
-			  <li>
-				<a href="#">Следующая</a> 
-			  </li>
-			</ul>
-		  </div>
-		</section>
-	  </main>
-	  <footer class="index-map">
-	    <div class="container">
-		  <article class="index-adress">
-		    <b>Nёrds desing studio</b>
-		    <p> 191135, Санкт-Петербург,<br>
-		    ул. Б. Конюшенная, д. 19/8<p>
-		    <p> тел: +7 (812) 275-75-75</p>
-		    <a class="btn" href="#">Напишите нам</a>
-		  </article>
-		</div>  
-	  </footer>
-	  <div class="container"> 
-		<footer class="main-footer clearfix">
-	      <section class="footer-social">
-			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-			<a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
-			<a class="social-btn social-btn-inst" href="#">Инстограм</a>  		
-		  </section>
-		  <section class="footer-friendship">
-			<h2>Давайте дружить, это выгодно!</h2>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
-		  </section>		  
+				<div class="catalog-gallery">
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_1.jpg" width="240" height="240" alt="catalog_web_1">
+					</a>
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_2.jpg" width="240" height="240" alt="catalog_web_2">
+					</a>
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_3.jpg" width="240" height="240" alt="catalog_web_3">
+					</a>
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_4.jpg" width="240" height="240" alt="catalog_web_4">
+					</a>
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_5.jpg" width="240" height="240" alt="catalog_web_5">
+					</a>
+					<a class="catalog-item">
+						<img src="img/catalog_web_small_6.jpg" width="240" height="240" alt="catalog_web_6">
+					</a>
+				</div>
+				<div class="catalog-pagination">
+					<ul>
+						<li>
+							<a href="#">1</a> 
+						</li>
+						<li>
+							<a href="#">2</a> 
+							</li>
+						<li>
+							<a href="#">3</a> 
+						</li>
+						<li>
+							<a href="#">Следующая</a> 
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer"> 
+			<div class="index-map">
+				<div class="container">
+					<article class="index-adress">
+						<b>Nёrds desing studio</b>
+						<p>191135, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел: +7 (812) 275-75-75</p>
+						<a class="btn btn-map" href="#">Напишите нам</a>
+					</article>
+				</div>
+			</div>
+			<div class="container clerafix">
+				<section class="footer-social">
+					<ul>
+						<li>
+							<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+						</li>
+						<li>
+							<a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+						</li>
+						<li>
+							<a class="social-btn social-btn-inst" href="#">Инстограм</a>
+						</li>
+					</ul>
+				</section>
+				<section class="footer-friendship">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</section>
+			</div>
 		</footer>
-	  </div>  
-	
-  </body>
+	</body>
 </html>
