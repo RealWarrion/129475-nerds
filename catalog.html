@@ -33,11 +33,11 @@
 		</header>
 		<div class="header">
 			<div class="container">
-				<b>Добро пожаловать в магазин готовых макетов</b>
+				<h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
 			</div>
 		</div>
 		<main class="container clearfix">
-			<section class="catalog-filters">
+			<div class="catalog-filters">
 				<form class="catalog-filters-cost" action="#" method="post">
 					<div class="catalog-range-filter">
 						<p class="catalog-filters-label">Стоимость:</p>
@@ -55,20 +55,20 @@
 							</div>
 						</div>
 					</div>
-					<div class="catalog-filter-grid">
+					<div class="catalog-filter-type">
 						<p class="catalog-filters-label">Сетка:</p>
 						<ul>
 							<li>
-								<input type="radio" name="ansewer-one" value="Адаптивная" checked>
-								<label for="ansewer-one"><a href="#">Адаптивная<a></label>
+								<input type="radio" name="ansewer-one" id="filters-radio-1" value="Адаптивная" checked>
+								<label for="filters-radio-1"><a href="#">Адаптивная</a></label>
 							</li>
 							<li>
-								<input type="radio" name="ansewer-one" value="Фиксированная">
-								<label for="ansewer-one"><a href="#">Фиксированная<a></label>
+								<input type="radio" name="ansewer-one" id="filters-radio-2" value="Фиксированная">
+								<label for="filters-radio-2"><a href="#">Фиксированная</a></label>
 							</li>
 							<li>
-								<input type="radio" name="ansewer-one" value="Резиновая">
-								<label for="ansewer-one"><a href="#">Резиновая<a></label>
+								<input type="radio" name="ansewer-one" id="filters-radio-3" value="Резиновая">
+								<label for="filters-radio-3"><a href="#">Резиновая</a></label>
 							</li>
 						</ul>
 					</div>
@@ -77,30 +77,30 @@
 						<ul>
 							<li>
 								<input type="checkbox" name="filter-slider" id="filter-slider" checked>
-								<label for="filter-slider"><a href="#">Слайдер<a></label>
+								<label for="filter-slider"><a href="#">Слайдер</a></label>
 							</li>
 							<li>
 									<input type="checkbox" name="filter-advantages" id="filter-advantages">
-									<label for="filter-advantages"><a href="#">Блок преимуществ<a></label>
+									<label for="filter-advantages"><a href="#">Блок преимуществ</a></label>
 							</li>
 							<li>
 								<input type="checkbox" name="filter-news" id="filter-news" checked>
-								<label for="filter-news"><a href="#">Новости<a></label>
+								<label for="filter-news"><a href="#">Новости</a></label>
 							</li>
 							<li>
 								<input type="checkbox" name="filter-gallery" id="filter-gallery">
-								<label for="filter-gallery"><a href="#">Галерея<a></label>
+								<label for="filter-gallery"><a href="#">Галерея</a></label>
 							</li>
 							<li>
 								<input type="checkbox" name="filter-basket" id="filter-basket">
-								<label for="filter-basketr"><a href="#">Корзина<a></label>
+								<label for="filter-basket"><a href="#">Корзина</a></label>
 							</li>
 						</ul>
 					</div>
 					<button class="btn btn-show" type="submit" value="Показать">Показать</button>
 				</form>
-			</section>
-			<section class="catalog-web-gallery">
+			</div>
+			<div class="catalog-web-gallery">
 				<div class="catalog-filter-gallery clearfix">
 					<b>Сортировать:</b>
 					<ul class="catalog-filter-sub">
@@ -120,24 +120,24 @@
 					</div>
 				</div>
 				<div class="catalog-gallery">
-					<a class="catalog-item">
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_1.jpg" width="240" height="240" alt="catalog_web_1">
-					</a>
-					<a class="catalog-item">
+					</div>
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_2.jpg" width="240" height="240" alt="catalog_web_2">
-					</a>
-					<a class="catalog-item">
+					</div>
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_3.jpg" width="240" height="240" alt="catalog_web_3">
-					</a>
-					<a class="catalog-item">
+					</div>
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_4.jpg" width="240" height="240" alt="catalog_web_4">
-					</a>
-					<a class="catalog-item">
+					</div>
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_5.jpg" width="240" height="240" alt="catalog_web_5">
-					</a>
-					<a class="catalog-item">
+					</div>
+					<div class="catalog-item">
 						<img src="img/catalog_web_small_6.jpg" width="240" height="240" alt="catalog_web_6">
-					</a>
+					</div>
 				</div>
 				<div class="catalog-pagination">
 					<ul>
@@ -155,13 +155,13 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="main-footer"> 
 			<div class="index-map">
 				<div class="container">
 					<article class="index-adress">
-						<b>Nёrds desing studio</b>
+						<h2>Nёrds desing studio</h2>
 						<p>191135, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел: +7 (812) 275-75-75</p>
