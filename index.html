@@ -3,34 +3,40 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="container">
-			<header class="main-header">
-				<nav class="main-navigation">
+		<header class="main-header">
+			<div class="container clearfix">			
+				<nav class="main-navigation clearfix">
 					<div class="header-logo">
 						<a class="home-page" href="#"><img src="img/logo_header.png" width="140" height="65" alt="home"></a>
 					</div>
-					<ul>
-						<li>
-							<a href="#">Cтудия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li>
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
+					<div class="main-menu">
+						<ul>
+							<li>
+								<a href="#">Cтудия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="#">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
-				<div class="cart">
-					<a href="#">корзина</a>
+				<div class="cart-bar">
+					<a class="cart" href="#">корзина</a>
 				</div>
-			</header>
-			<div class="header"> 
+			</div>	
+		</header>
+		<div class="header">
+			<div class="container">
 				<div class="slider">
 					<input type="radio" id="btn-1" name="toggle" checked>
 					<input type="radio" id="btn-2" name="toggle">
@@ -43,50 +49,50 @@
 					<div class="slides">
 						<div class="slide">
 							<div class="slide-text">
-								<h2 class="slide-title">Долго, дорого, скрупулезно</h2>
+								<div class="slide-title">Долго, дорого, скрупулезно</div>
 								<p>Математически выверенный дизайн<br>
 									для вашего сайта или мобильного приложения.</p>
-								<a class="btn btn-slide-1" href="#">Узнать больше</a>
+								<a class="btn" href="#">Узнать больше</a>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-text">
-								<h2 class="slide-title">Любите ли вы матемтику, как любим ее мы?</h2>
+								<div class="slide-title">Любите ли вы матемтику, как любим ее мы?</div>
 								<p>Нашим дизайнерам мы удаляем нейроны, ответсвенные<br>
 									за креатив, чтобы дать им возможность все просчитать</p>
-								<a class="btn btn-slide-2" href="#">Узнать больше</a>
+								<a class="btn" href="#">Узнать больше</a>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-text">
-								<h2 class="slide-title">Только наркотики, только хардкор!</h2>
+								<div class="slide-title">Только наркотики, только хардкор!</div>
 								<p>Все дизайнерские решения в нашей компании принимаются тольео под воздействием качественных галлюциногенов</p>
-								<a class="btn btn-slide-3" href="#">Узнать больше</a>
+								<a class="btn" href="#">Узнать больше</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<main class="container clearfix">
 			<div class="index-design-types clearfix">
 				<article class="design-type">
 					<img src="img/web.jpg" width="140" height="100" alt="Веб-сайты">
-					<h2 class="index-card-h2">Веб-сайты</h2>
+					<h2 class="index-card">Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="btn btn-red" href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</article>
 				<article class="design-type">
 					<img src="img/apps.jpg" width="140" height="100" alt="Приложения">
-					<h2 class="index-card-h2">Приложения</h2>
+					<h2 class="index-card">Приложения</h2>
 					<p>Покорите топ-10 приложений а AppStore и Google Play</p>
-					<a class="btn btn-green" href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</article>
 				<article class="design-type">
 					<img src="img/presentations.jpg" width="140" height="100" alt="Презентации">
-					<h2 class="index-card-h2">Презентации</h2>
+					<h2 class="index-card">Презентации</h2>
 					<p>Вы даже не подозреваетеэ насколько вы изумительны!</p>
-					<a class="btn btn-yellow" href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</article>
 			</div>
 			<div class="about-us clearfix">
@@ -110,7 +116,7 @@
 				</div>
 				<div class="about-us-right">
 					<div class="about-us-logo">
-						<img src="img/nerds.png" width="240" height="130" alt="Логотип">
+						<img src="img/logo_header.png" width="192" height="80" alt="Логотип">
 						<p>since 2004</p>
 					</div>
 					<div class="about-us-list">
@@ -130,9 +136,9 @@
 				</div>
 			</div>
 			<div class="index-partners clearfix">
-				<a href="#"><img src="img/glukhanko_logo.png" width="200" height="100" alt="Glukhanko"></a>
-				<a href="#"><img src="img/html_academy_logo.png" width="200" height="100" alt="Html academy"></a>
-				<a href="#"><img src="img/borodinski_logo.png" width="200" height="100" alt="Барбешоп «Бородинский»"></a>
+				<a href="#"><img src="img/glukhanko_logo.png" width="198" height="37" alt="Glukhanko"></a>
+				<a href="#"><img src="img/html_academy_logo.png" width="199" height="68" alt="Html academy"></a>
+				<a href="#"><img src="img/borodinski_logo.png" width="209" height="90" alt="Барбешоп «Бородинский»"></a>
 			</div>
 		</main>
 		<footer class="main-footer"> 
