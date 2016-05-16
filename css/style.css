@@ -18,7 +18,18 @@
   src: url("../fonts/symbols-nerds.woff") format("woff"),
        url("../fonts/symbols-nerds.woff2") format("woff2");
 }
-
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotomedium.woff2');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2');
+	font-style: normal;
+	font-weight: normal;
+}
 body {
 	min-width:900px;
 	padding:0;
